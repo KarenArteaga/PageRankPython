@@ -1,13 +1,17 @@
+
+"""
+Created on Tue May 17 11:15:32 2022
+
+@author: karenarteaga
+"""
+
 import networkx as nx
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import operator
 import random as rd
 
 # Crear un grafo dirigido
 grafo = nx.gnp_random_graph(25, 0.6, directed = True)
-nx.draw(grafo, with_labels = True, font_color ='red', font_size = 10,node_color = 'yellow')
+nx.draw(grafo, with_labels = True, font_color ='white', font_size = 12, node_color = 'blue')
 
 # Mostrar el grafo
 plt.show()
@@ -15,7 +19,7 @@ plt.show()
 # Número de nodos en el grafo
 contador = grafo.number_of_nodes()
 
-# Imprimir vecinos del nodo 1
+# Imprimir lista de vecinos de un nodo
 print(list(grafo.neighbors(1)))
 
 # Algoritmo Page Rank
@@ -58,4 +62,3 @@ for i in ranking_ordenado:
 print("\n\nAlgoritmo PAge Rank de networkx\n")
 for i in paginas_ordenadas:
   print(i[0], end = " ")
-
