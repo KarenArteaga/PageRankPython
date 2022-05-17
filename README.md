@@ -39,14 +39,18 @@ Los pasos que se siguieron para la implementación son:
 10. Normalizar los valores dividiendo entre el número de iteraciones.
 11. Imprimir los nodos en orden descendente según el valor asignado
 
-## Pruebas
-Se utilizó la función `pagerank` del paquete NetworkX de Python para comparar los resultados del algoritmo implementado. La función `pagerank` de Networkx computa el ranking de los nodos de una grafo G basado en la estructura de las aristas. 
-La función pagerank es la siguiente: 
+## Pruebas y resultados
+Se utilizó la función `pagerank` del paquete NetworkX de Python para comparar los resultados del algoritmo implementado. La función `pagerank` de Networkx computa el ranking de los nodos de una grafo G basado en la estructura de las aristas:
   
-  `pagerank(G, alpha=0.85, personalization=None, max_iter=100, tol=1e-06, nstart=None, weight='weight', dangling=None)`,
+  `pagerank(G)`,
 
 donde:
+- G: grafo que se va a utilizar
 
+Después se ordenó el diccionario de nodos en orden decreciente según el valor asignado por la función `pagerank`. Finalmente, se imprimió el diccionario ordenado para compararlo con el diccionario resultante de la implementación del algoritmo.  
+
+### Resultados
+  
 
 ## Conclusiones
 
