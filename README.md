@@ -22,10 +22,10 @@ Mayo 2022
 
 
 ## Simulación de las páginas web de Google <a name="simula"></a> 
-En abril 2022, se estima que Google tiene alrededor de 200.5 millones de sitios web activos. Esto se traduce a cientos de millones de páginas web y, como resultado, miles de millones de hipervínculos entre paginas web. Este sistema de páginas e hipervínculos se puede representar como un grafo dirigido de cientos de millones de nodos que almacenan las páginas web y miles de millones de aristas que representan los hipervículos entre páginas. Sin embargo, simular un sistema con una cantidad tan elevada de elementos y conexiones es innecesario, pues la implementación del algoritmo es la misma para conjuntos de cardinalidad mínima. Por lo tanto, para fines prácticos, se decidió representar el conjunto de páginas web de Google con un grafo dirigido de una cantidad mínima de nodos (10 - 100) y una probabilidad de aristas de 0.6 con pesos aleatorios.
+En abril 2022, se estima que Google tiene alrededor de 200.5 millones de sitios web activos. Esto se traduce a cientos de millones de páginas web y, como resultado, miles de millones de hipervínculos entre paginas web. Este sistema de páginas e hipervínculos se puede representar como un grafo dirigido de cientos de millones de nodos que almacenan las páginas web y miles de millones de aristas que representan los hipervículos entre páginas. Sin embargo, simular un sistema con una cantidad tan elevada de elementos y conexiones es innecesario, pues la implementación del algoritmo es la misma para conjuntos de cardinalidad mínima. Por lo tanto, para fines prácticos, se decidió representar el conjunto de páginas web de Google con un grafo dirigido de una cantidad mínima de nodos (10 - 100) y una probabilidad de aristas de 0.6 aleatorias.
 
 ## Implementación <a name="implem"></a> 
-La implementación del algoritmo Page Rank se realizó en el lenguage Python. 
+La implementación del algoritmo Page Rank se realizó en el lenguage Python y se puede replicar duplicando este repositorio. 
 Los pasos que se siguieron para la implementación son:
 1. Crear un grafo dirigido aleatorio con n nodos y probabilidad de aristas p.
 2. Crear un diccionario vacío para el ranking.
@@ -40,6 +40,13 @@ Los pasos que se siguieron para la implementación son:
 11. Imprimir los nodos en orden descendente según el valor asignado
 
 ## Pruebas
+Se utilizó la función `pagerank` del paquete NetworkX de Python para comparar los resultados del algoritmo implementado. La función `pagerank` de Networkx computa el ranking de los nodos de una grafo G basado en la estructura de las aristas. 
+La función pagerank es la siguiente: 
+  
+  `pagerank(G, alpha=0.85, personalization=None, max_iter=100, tol=1e-06, nstart=None, weight='weight', dangling=None)`,
+
+donde:
+
 
 ## Conclusiones
 
