@@ -56,3 +56,10 @@ Después se ordenó el diccionario de nodos en orden decreciente según el valor
 
 
 ## Referencias 
+https://www.semrush.com/blog/pagerank/?kw=&cmp=LM_SRCH_DSA_Blog_Core_BU_EN&label=dsa_pagefeed&Network=g&Device=c&utm_content=515715498615&kwid=dsa-1057183199035&cmpid=11799892963&agpid=112575465737&BU=Core&extid=23624544571&adpos=&gclid=CjwKCAjwj42UBhAAEiwACIhADsOhj5NanvnwMsCDatEAOIJF4yHDsivQZVgmDvAeOaax9I5OUnLkohoCWcIQAvD_BwE
+
+https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html
+
+https://siteefy.com/how-many-websites-are-there/#How-Many-Webpages-Are-There
+
+https://medium.com/analytics-vidhya/how-google-search-works-page-rank-algorithm-using-python-9643d9c9a981
