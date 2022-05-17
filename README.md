@@ -4,7 +4,7 @@
 Proyecto final de la materia Cálculo Numérico
 Creado por:
 - Karen Artega Mendoza 190161
-- Eduardo Riveros 
+- Eduardo Riveros Mckay Aguilera 174724
 
 ---
 Mayo 2022
@@ -19,6 +19,17 @@ Mayo 2022
 
 
 ## Introducción <a name="info"></a> 
+
+PageRank (PR) es un algoritmo utilizado por Google Search para clasificar sitios web en los resultados de su motor de búsqueda. PageRank lleva el nombre de Larry Page, uno de los fundadores de Google. PageRank es una forma de medir la importancia de las páginas de un sitio web. 
+
+PageRank funciona contando el número y la calidad de los enlaces a una página para determinar una estimación aproximada de la importancia del sitio web. La suposición diría que es probable que los sitios web más importantes reciban más enlaces de otros sitios web.
+
+No es el único algoritmo utilizado por Google para ordenar los resultados del motor de búsqueda, pero es el primer algoritmo que utilizó la empresa, y es el más conocido.
+La medida de centralidad anterior no se implementa para gráficos múltiples.
+
+Algoritmo
+El algoritmo PageRank genera una distribución de probabilidad que se utiliza para representar la probabilidad de que una persona que hace clic aleatoriamente en los enlaces llegue a una página en particular. PageRank se puede calcular para colecciones de documentos de cualquier tamaño. Se supone en varios trabajos de investigación que la distribución se divide uniformemente entre todos los documentos de la colección al comienzo del proceso computacional. Los cálculos de PageRank requieren varias pasadas, llamadas "iteraciones", a través de la colección para ajustar los valores aproximados de PageRank para reflejar más fielmente el valor real teórico.
+
 
 
 ## Simulación de las páginas web de Google <a name="simula"></a> 
