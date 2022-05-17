@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
 
 """
 Created on Tue May 17 11:15:32 2022
@@ -9,6 +16,15 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import random as rd
 
+def dic_comprobacion(grafo):
+    # Usar el Page Rank de networkx
+    lista = nx.pagerank(grafo)
+
+    # ordenar los nodos
+    paginas_ordenadas = sorted(lista.items(),key = lambda v: (v[1], v[0]), reverse = True)
+    return paginas_ordenadas
+
+
 def page_rank(num_nodos, prob):
     # Crear un grafo dirigido
     grafo = nx.gnp_random_graph(num_nodos, prob, directed = True)
@@ -16,10 +32,6 @@ def page_rank(num_nodos, prob):
     
     # Mostrar el grafo
     plt.show()
-
-    
-    # Imprimir vecinos del nodo 1
-    print(list(grafo.neighbors(1)))
     
     # Algoritmo Page Rank
     ranking_dic = {}
@@ -45,27 +57,17 @@ def page_rank(num_nodos, prob):
     for j in range(0, num_nodos):
       ranking_dic[j] = ranking_dic[j]/600000
     
-    # Usar el Page Rank de networkx
-    pagerank = nx.pagerank(grafo)
     
-    # Ordenar los dos diccionarios
-    paginas_ordenadas = sorted(pagerank.items(),key = lambda v: (v[1], v[0]), reverse = True)
-    
-    ranking_ordenado = sorted(ranking_dic.items(), key = lambda v: (v[1], v[0]), reverse = True)
+    # Ordenar los nodos
+    mi_ranking = sorted(ranking_dic.items(), key = lambda v: (v[1], v[0]), reverse = True)
+    netw_ranking = dic_comprobacion(grafo)
     
     # Comparar los resultados
-    print("\nAlgoritmo Page Rank implementado: \n")
-    for i in ranking_ordenado:
-      print(i[0],end = " ")
-    
-    print("\n\nAlgoritmo PAge Rank de networkx\n")
-    for i in paginas_ordenadas:
-      print(i[0], end = " ")
+    print("\nMi Algoritmo ---- NetworkX\n")
+    for i in range(num_nodos):
+      print((i+1), ".", '{:>8}  {:>8}'.format(mi_ranking[i][0], netw_ranking[i][0]))
 
 
 page_rank(10, 0.6)
 page_rank(25, 0.6)
 page_rank(50, 0.6)
-
-
-
