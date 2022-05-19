@@ -79,7 +79,7 @@ def page_rank(num_nodos, prob):
 page_rank(10, 0.6)
 
 # resultados para grafo con 25 nodos
-#page_rank(25, 0.6)
+page_rank(25, 0.6)
 
 # resultados para grafo con 50 nodos
-#page_rank(50, 0.6)
+page_rank(50, 0.6)
