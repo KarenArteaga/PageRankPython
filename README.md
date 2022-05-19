@@ -65,18 +65,18 @@ Después se ordenó el diccionario de nodos en orden decreciente según el valor
   Se hicieron 3 pruebas del algoritmo para diferentes grafos.
   
   1. Grafo con 10 nodos y probabilidad de generar arista de 0.6
-    ![gr1]<"https://user-images.githubusercontent.com/69361149/169181775-1aa9ada1-ca22-4678-bd1c-5ad0dfe5132d.png">
-    ![r1]<"https://user-images.githubusercontent.com/69361149/169181855-92880b65-0212-4cab-9a00-b1e8dc9d03a0.png">
+    ![gr1](https://user-images.githubusercontent.com/69361149/169181775-1aa9ada1-ca22-4678-bd1c-5ad0dfe5132d.png)
+    ![r1](https://user-images.githubusercontent.com/69361149/169181855-92880b65-0212-4cab-9a00-b1e8dc9d03a0.png)
 
     
   2. Grafo con 25 nodos y probabilidad de generar arista de 0.6
-    ![gr2]<"https://user-images.githubusercontent.com/69361149/169181887-d4e93219-c4d9-4978-a6e2-8d95d3ee35ce.png">
-    ![r2]<"https://user-images.githubusercontent.com/69361149/169181924-1f52cd3f-2d99-4e8d-a9d8-13b7fea4f579.png">
+    ![gr2](https://user-images.githubusercontent.com/69361149/169181887-d4e93219-c4d9-4978-a6e2-8d95d3ee35ce.png)
+    ![r2](https://user-images.githubusercontent.com/69361149/169181924-1f52cd3f-2d99-4e8d-a9d8-13b7fea4f579.png)
 
 
   3. Grafo con 50 nodos y probabilidad de generar arista de 0.6
-    ![gr3]<"https://user-images.githubusercontent.com/69361149/169181956-856355aa-83cf-48a5-b840-d3736886c6c2.png">
-    ![r3]<"https://user-images.githubusercontent.com/69361149/169181995-14a80551-add0-4be0-bac9-ebcbd583b39e.png">
+    ![gr3](https://user-images.githubusercontent.com/69361149/169181956-856355aa-83cf-48a5-b840-d3736886c6c2.png)
+    ![r3](https://user-images.githubusercontent.com/69361149/169181995-14a80551-add0-4be0-bac9-ebcbd583b39e.png)
 
 
 ## Conclusiones
