@@ -35,14 +35,15 @@ def resultados(mi_ranking, netw_ranking):
                    
     df1['dif'] = abs((df1['ranking     '] - df1['ranking    '])/df1['ranking     '])*100
     promedio = df1['dif'].mean()
+    
+    print("porcentaje de error promedio: ", round(promedio, 2))
+    print("Cantidad de nodos en posición equivocada: ", nodos_dif)
     df1.loc[-1] = ['Nodo', 'Valores', 'Nodo', 'Valores', 'error de aprox']
     df1.index = df1.index + 1  
     df1.sort_index(inplace = True) 
-    print("El porcentaje de error promedio es: ", round(promedio,2))
-    print("La cantidad de nodos diferente es: ", nodos_dif)
-    
-    df1.style
     print(df1)
+    # return round(promedio, 2), nodos_dif
+
 
 
 def page_rank(num_nodos, prob):
@@ -85,13 +86,32 @@ def page_rank(num_nodos, prob):
     
     # mostrar resultados
     resultados(mi_ranking, netw_ranking)
+    # err, nod =resultados(mi_ranking, netw_ranking)
+    # return err, nod
+
     
 
 # resultados para grafo con 10 nodos
-page_rank(10, 0.6)
+#lista_error = []
+#lista_nodos = []
+#for i in range(100):
+#    err, nod = page_rank(10, 0.6)
+#    lista_error.append(err)
+#    lista_nodos.append(nod)
+    
+    
+#print("promedio error: ", sum(lista_error)/100.0)
+#print("promedio nodos: ", sum(lista_nodos)/100.0)
+#print("\n\n")
+
+
+# resultados para grafo con 10 nodos
+print(page_rank(10, 0.6))
 print("\n\n")
+
 # resultados para grafo con 25 nodos
-page_rank(25, 0.6)
+print(page_rank(25, 0.6))
 print("\n\n")
+
 # resultados para grafo con 50 nodos
 page_rank(50, 0.6)
