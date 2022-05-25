@@ -14,7 +14,6 @@ Mayo 2022
 * [Simulación de las páginas web de Google](#simula)
 * [Implementación](#implem)
 * [Pruebas](#pruebas)
-* [Conclusiones](#conclusiones)
 * [Referencias](#referencias)
 
 
@@ -27,7 +26,7 @@ PageRank funciona contando el número y la calidad de los enlaces a una página 
 No es el único algoritmo utilizado por Google para ordenar los resultados del motor de búsqueda, pero es el primer algoritmo que utilizó la empresa, y es el más conocido.
 La medida de centralidad anterior no se implementa para gráficos múltiples.
 
-Algoritmo
+### Algoritmo
 El algoritmo PageRank genera una distribución de probabilidad que se utiliza para representar la probabilidad de que una persona que hace clic aleatoriamente en los enlaces llegue a una página en particular. PageRank se puede calcular para colecciones de documentos de cualquier tamaño. Se supone en varios trabajos de investigación que la distribución se divide uniformemente entre todos los documentos de la colección al comienzo del proceso computacional. Los cálculos de PageRank requieren varias pasadas, llamadas "iteraciones", a través de la colección para ajustar los valores aproximados de PageRank para reflejar más fielmente el valor real teórico.
 
 
@@ -77,9 +76,6 @@ Después se ordenó el diccionario de nodos en orden decreciente según el valor
   3. Grafo con 50 nodos y probabilidad de generar arista de 0.6
     ![gr3](https://user-images.githubusercontent.com/69361149/169181956-856355aa-83cf-48a5-b840-d3736886c6c2.png)
     ![r3](https://user-images.githubusercontent.com/69361149/169181995-14a80551-add0-4be0-bac9-ebcbd583b39e.png)
-
-
-## Conclusiones
 
 
 ## Referencias 
