@@ -26,9 +26,21 @@ def resultados(mi_ranking, netw_ranking):
     df2 = pd.DataFrame(netw_ranking)
     df1['     NetworkX'] = df2[0]
     df1['ranking     '] = df2[1]
-    df1.loc[-1] = ['Nodo', 'Valores', 'Nodo', 'Valores']
+    
+    nodos_dif = 0
+    for ind, row in df1.iterrows():
+        if row['     Nuestro'] != row['     NetworkX']:
+            nodos_dif += 1
+            
+                   
+    df1['dif'] = abs((df1['ranking     '] - df1['ranking    '])/df1['ranking     '])*100
+    promedio = df1['dif'].mean()
+    df1.loc[-1] = ['Nodo', 'Valores', 'Nodo', 'Valores', 'error de aprox']
     df1.index = df1.index + 1  
     df1.sort_index(inplace = True) 
+    print("El porcentaje de error promedio es: ", round(promedio,2))
+    print("La cantidad de nodos diferente es: ", nodos_dif)
+    
     df1.style
     print(df1)
 
@@ -77,9 +89,9 @@ def page_rank(num_nodos, prob):
 
 # resultados para grafo con 10 nodos
 page_rank(10, 0.6)
-
+print("\n\n")
 # resultados para grafo con 25 nodos
 page_rank(25, 0.6)
-
+print("\n\n")
 # resultados para grafo con 50 nodos
 page_rank(50, 0.6)
